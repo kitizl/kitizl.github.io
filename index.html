@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Nithesh Balasubramanian</title>
-  </head>
-  <body>
-    <h1># Site under Construction #</h1>
-		<img src="https://www.icpnetwork.eu/wp-content/uploads/2018/01/Under-Construction.jpg">
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css" />
+    <title>Project Nochul</title>
+</head>
+<body>
+
+    <h1> Philosophy of Art </h1>
+    <p> The psychology of art </p>
+
+    <div id="videoContainer">
+        <!-- embed video here-->
+        <p> This is where the video goes </p>
+
+    </div>
+    <h2> Rank the paintings </h2>
+    <p>Just one painting per ranking, please</p>
+    <h3>Paintings</h3>
+    <div id="bank">
+        <div class="card" id="monroe" draggable="true">
+            <img id="monroe" width="100" height="100" src="../images/samples/images_001.jpg"/>
+        </div>
+        <div class="card" id="krishna" draggable="true">
+            <img id="krishna" width="100" height="100" src="../images/samples/images_002.jpg"/>
+        </div>
+        <div class="card" id="blue" draggable="true">
+            <img id="blue" width="100" height="100" src="../images/samples/images_003.jpg"/>
+        </div>
+        <div class="card" id="horizon" draggable="true">
+            <img id="horizon" width="100" height="100" src="../images/samples/images_004.jpg"/>
+        </div>
+        <div class="card" id="magic" draggable="true">
+            <img id="magic" width="100" height="100" src="../images/samples/images_005.jpg"/>
+        </div>
+    </div>
+    <div id="board">
+        <div class="row">
+            <div class="rank">1</div>
+        </div>
+        <div class="row">
+            <div class="rank">2</div>
+        </div>
+        <div class="row">
+            <div class="rank">3</div>
+        </div>
+        <div class="row">
+            <div class="rank">4</div>
+        </div>
+        <div class="row">
+            <div class="rank">5</div>
+        </div>
+    </div>
+
+    <div id="results">
+        Click here once you're ready : <button id="go"> Go! </button>
+    </div>
+
+    <script src="./cards.js"></script>
+    <script src="./rows.js"></script>
+    <script src="./bank.js"></script>
+    
+</body>
 </html>
