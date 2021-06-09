@@ -1,12 +1,12 @@
 body {
-    font-family: 'Gill Sans MT';
-    color: #c4cbca;
+    font-family: 'Arial';
+    color: #00000;
     margin: 0;  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #07004d;
+    background-color: #f0f0f0;
 }
 
 #board {
