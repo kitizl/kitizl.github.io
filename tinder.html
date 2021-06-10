@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css" />
+    <title>PoA | Experiment</title>
+</head>
+<body>
+
+    <h1> Philosophy of Art </h1>
+
+    <div id="videoContainer">
+        <!-- embed video here-->
+        <iframe src="https://www.youtube.com/embed/hvt5xjZTN1U" title="YouTube video player" frameborder="10" allowfullscreen></iframe>
+    </div>
+
+    <h2>Which do you like more? Click to choose</h2>
+
+    <div id="tinder">
+        <div class="paintingContainer">
+            <img class="paintings" onclick="decide()" src="" id="left"></div>
+            <p>&nbsp;&nbsp;<b>vs.</b>&nbsp;&nbsp;</p>
+            <img class="paintings" onclick="decide()" src="" id="right"></div>
+        </div>
+    </div>
+
+    <footer>
+        An Honours College - Philosophy of Art Production        
+    </footer>
+
+
+    <script type="text/javascript">
+        function setImages() {
+            leftCard = document.querySelectorAll('#left');
+            rightCard = document.querySelectorAll('#right');
+            if (Math.random() > 0.5){
+               leftCard[0].src = "images/most_freq.png";
+               rightCard[0].src = "images/least_freq.png";
+            }
+            else {
+               rightCard[0].src = "images/most_freq.png";
+               leftCard[0].src = "images/least_freq.png";
+            }
+        }
+        window.onload = setImages;
+    </script>
+    <script type="text/javascript">
+        function decide() {
+            console.log(event.target.id); // storing the 
+            var targetURL = event.target.src;
+            //console.log(targetURL);
+            if (targetURL.search("most") != -1) {
+                console.log("Congrats, you picked the most frequent one!");
+            }
+        }
+    </script>
+
+    <!--
+    <h2> Rank the paintings </h2>
+    <p>Just one painting per ranking, please</p>
+    <h3>Paintings</h3>
+    <div id="bank">
+        <div class="card" id="monroe" draggable="true">
+            <img id="monroe" width="100" height="100" src="./images/samples/images_001.jpg"/>
+        </div>
+        <div class="card" id="krishna" draggable="true">
+            <img id="krishna" width="100" height="100" src="./images/samples/images_002.jpg"/>
+        </div>
+        <div class="card" id="blue" draggable="true">
+            <img id="blue" width="100" height="100" src="./images/samples/images_003.jpg"/>
+        </div>
+        <div class="card" id="horizon" draggable="true">
+            <img id="horizon" width="100" height="100" src="./images/samples/images_004.jpg"/>
+        </div>
+        <div class="card" id="magic" draggable="true">
+            <img id="magic" width="100" height="100" src="./images/samples/images_005.jpg"/>
+        </div>
+    </div>
+    <div id="board">
+        <div class="row">
+            <div class="rank">1</div>
+        </div>
+        <div class="row">
+            <div class="rank">2</div>
+        </div>
+        <div class="row">
+            <div class="rank">3</div>
+        </div>
+        <div class="row">
+            <div class="rank">4</div>
+        </div>
+        <div class="row">
+            <div class="rank">5</div>
+        </div>
+    </div>
+
+    <div id="results">
+        Click here once you're ready : <button id="go"> Go! </button>
+    </div>
+    -->
+    <!--
+    <script src="./cards.js"></script>
+    <script src="./rows.js"></script>
+    <script src="./bank.js"></script>-->
+    
+</body>
+</html>
