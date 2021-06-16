@@ -32,9 +32,9 @@
     </div>
 
 
-    <footer>
-        An Honours College - Philosophy of Art Production        
-    </footer>
+    <p id="footnote">
+        <a href="credits.html">An Honours College - Philosophy of Art Production</a>
+    </p>
 
 
     <script type="text/javascript">
@@ -61,11 +61,12 @@
 
             if (targetURL.search("most") != -1) {
                 console.log("Congrats, you picked the most frequent one!");
-                window.location.replace("./boat.html");
+                window.location.replace("./boat.html"); // replace prevents people from going back
                 
             }
             else{
                 console.log("Oh no, you didn't pick the right one.");
+                window.location.replace("./anubis.html"); // replace prevents people from going back
             }
         }
     </script>
