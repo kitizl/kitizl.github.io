@@ -15,61 +15,19 @@
         <iframe src="https://www.youtube.com/embed/954z81myI5o" title="YouTube video player" frameborder="10" allowfullscreen></iframe>
     </div>
 
-    <h2>Which do you like more? Click to choose</h2>
-
-    <div id="tinder">
-        <div class="paintingContainer">
-            <img class="paintings" onclick="decide()" src="" id="left">
-        </div>
-            <p>&nbsp;&nbsp;<b>vs.</b>&nbsp;&nbsp;</p>
-        <div>
-            <img class="paintings" onclick="decide()" src="" id="right">
-        </div>
-    </div>
+    <p style='font-size: 32px; margin-top: 10vh;'>Done with the video?</p>
+    <a id="next" href="choice.html">
+        Next ⏭
+    </a>
 
     <!--<a href="" class="nextSlide">>> Next >></a>-->
 
     </div>
 
 
-    <p id="footnote">
-        <a href="credits.html">An Honours College - Philosophy of Art Production</a>
+    <p id="footnote" style="cursor: pointer; text-decoration:underline;" onclick="window.location='credits.html';">
+        An Honours College - Philosophy of Art Production
     </p>
-
-
-    <script type="text/javascript">
-        function setImages() {
-            leftCard = document.querySelectorAll('#left');
-            rightCard = document.querySelectorAll('#right');
-            if (Math.random() > 0.5){
-               leftCard[0].src = "images/most_freq.png";
-               rightCard[0].src = "images/least_freq.jpg";
-            }
-            else {
-               rightCard[0].src = "images/most_freq.png";
-               leftCard[0].src = "images/least_freq.jpg";
-            }
-        }
-        window.onload = setImages;
-    </script>
-    <script type="text/javascript">
-
-        function decide() {
-            console.log(event.target.id); // storing the 
-            var targetURL = event.target.src;
-            //console.log(targetURL)
-
-            if (targetURL.search("most") != -1) {
-                console.log("Congrats, you picked the most frequent one!");
-                window.location.replace("./boat.html"); // replace prevents people from going back
-                
-            }
-            else{
-                console.log("Oh no, you didn't pick the right one.");
-                window.location.replace("./anubis.html"); // replace prevents people from going back
-            }
-        }
-    </script>
     
 </body>
 </html>
