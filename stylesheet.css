@@ -107,6 +107,7 @@ body {
 }
 
 #next {
+    cursor: pointer;
     border-style: solid;
     border-width: 10px;
     border-color: black;
