@@ -3,7 +3,7 @@ h1 {
 }
 
 p {
-    font-size:  54px;
+    font-size:  24px;
 }
 
 iframe {
@@ -25,6 +25,7 @@ iframe {
     width: 30vw;
     border-color: black;
     border-width: 5px;
+    cursor: pointer; 
 }
 
 body {
@@ -96,7 +97,13 @@ body {
 
 #footnote {
     display: block;
+    font-size: 12px;
     justify-content: center;
     align-items: center;
-    background-color: #050505;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+a {
+    color: #a0a0a0;
 }
