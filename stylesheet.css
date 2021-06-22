@@ -103,7 +103,7 @@ body {
     align-items: center;
     margin-top: 10em;
     margin-bottom: 10em;
-
+    text-decoration: underline;
 }
 
 #next {
